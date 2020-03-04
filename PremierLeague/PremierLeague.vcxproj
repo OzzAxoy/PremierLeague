@@ -19,12 +19,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="cApp.cpp" />
-    <ClCompile Include="cMain.cpp" />
+    <ClCompile Include="MainApplication.cpp" />
+    <ClCompile Include="MainFrame.cpp" />
+    <ClCompile Include="MenuFrame.cpp" />
+    <ClCompile Include="TitleFrame.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="cApp.h" />
-    <ClInclude Include="cMain.h" />
+    <ClInclude Include="MainApplication.h" />
+    <ClInclude Include="MainFrame.h" />
+    <ClInclude Include="MenuFrame.h" />
+    <ClInclude Include="TitleFrame.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
