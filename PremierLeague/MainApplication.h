@@ -1,8 +1,5 @@
 #pragma once
 #include <wx/wx.h>
-#include "MainFrame.h"
-#include "MenuFrame.h"
-#include "TitleFrame.h"
 
 class MainApplication : public wxApp
 {
@@ -12,9 +9,15 @@ public:
 
 	virtual bool OnInit();
 
+	void TitleFrame();
+
+	void MenuFrame();
+
+	void MainFrame();
+
 private:
-	MainFrame* m_mainFrame = nullptr;
-	MenuFrame* m_menuFrame = nullptr;
-	TitleFrame* m_titleFrame = nullptr;
+	wxMDIParentFrame* m_mainFrame = nullptr;
+	wxMDIChildFrame* m_menuFrame = nullptr;
+	wxMDIChildFrame* m_titleFrame = nullptr;
 };
 

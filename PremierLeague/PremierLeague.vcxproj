@@ -20,15 +20,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainApplication.cpp" />
-    <ClCompile Include="MainFrame.cpp" />
-    <ClCompile Include="MenuFrame.cpp" />
-    <ClCompile Include="TitleFrame.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainApplication.h" />
-    <ClInclude Include="MainFrame.h" />
-    <ClInclude Include="MenuFrame.h" />
-    <ClInclude Include="TitleFrame.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

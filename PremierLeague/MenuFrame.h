@@ -6,5 +6,8 @@ class MenuFrame : public wxMDIChildFrame
 public:
 	MenuFrame();
 	~MenuFrame();
+
+private:
+	
 };
 
