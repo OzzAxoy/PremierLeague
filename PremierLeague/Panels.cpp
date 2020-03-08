@@ -1,18 +1,18 @@
 #include "MainFrame.h"
 
 MenuPanel::MenuPanel(wxPanel* parent)
-	: wxPanel(parent, -1, wxPoint(-1, -1), wxSize(-1, -1), wxBORDER_SUNKEN)
+	: wxPanel(parent, wxID_ANY, wxDefaultPosition, wxSize(320, 720), wxBORDER_SUNKEN)
 {
 	m_parent = parent;
 }
 
 TitlePanel::TitlePanel(wxPanel* parent)
-	: wxPanel(parent, wxID_ANY, wxDefaultPosition, wxSize(320,720), wxBORDER_SUNKEN)
+	: wxPanel(parent, wxID_ANY, wxPoint(325, 0), wxSize(955, 720), wxBORDER_SUNKEN)
 {
-
+	m_parent = parent;
 }
 
-void TitlePanel::SetImage()
+void MenuPanel::SetImage()
 {
 	handler = new wxPNGHandler;
 	wxImage::AddHandler(handler);

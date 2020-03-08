@@ -8,7 +8,11 @@ MainFrame::MainFrame(const wxString& title)
     m_menuPanel = new MenuPanel(m_parent);
     m_titlePanel = new TitlePanel(m_parent);
 
-    m_titlePanel->SetImage();
+    m_titlePanel->SetBackgroundColour(*wxBLUE);
+    m_menuPanel->SetBackgroundColour(*wxCYAN);
+    m_menuPanel->SetImage();
+
+    
 
     this->Centre();
 }
