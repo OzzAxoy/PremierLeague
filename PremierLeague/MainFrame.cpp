@@ -1,17 +1,14 @@
 #include "MainFrame.h"
 
-MainFrame::MainFrame() : wxMDIParentFrame ( nullptr,
-                                  wxID_ANY,
-                                  "Premier League 2019-2020",
-                                  wxPoint(100, 100), wxSize(1280, 720),
-                                  wxDEFAULT_FRAME_STYLE
-                                )
+MainFrame::MainFrame(const wxString& title) 
+    : wxFrame ( nullptr, wxID_ANY, title, wxDefaultPosition, wxSize(1280, 720))
 {
+    m_parent = new wxPanel(this, wxID_ANY);
 
+    m_menuPanel = new MenuPanel(m_parent);
+    m_titlePanel = new TitlePanel(m_parent);
+
+    m_titlePanel->SetImage();
+
+    this->Centre();
 }
-
-MainFrame::~MainFrame()
-{
-
-}
-
